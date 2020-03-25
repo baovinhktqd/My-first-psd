@@ -1,0 +1,100 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+.header{
+    width: 100%;
+    border-bottom:1px solid #ddd;
+}
+.logo-img{
+
+}
+
+.bd-left {
+    border-left: 1px solid #ddd;
+}
+
+.header .nav-top{
+    background-color: #2A3342;
+    color: #3C4554;
+}
+
+.header .header-left {
+    padding: 50px 30px;
+}
+
+.header .nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header .nav-bottom .nav-item{
+    padding: 0 20px;
+    position: relative;
+}
+.header .nav-bottom .nav-item:not(:last-child)::after{
+    content: '';
+    display: block;
+    width: 5px;
+    height:5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+
+}
+.form-search {
+    padding: 50px;
+    border-left: 1px solid #ddd;
+}
+.header .nav-bottom .nav-link{
+    display: block;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.noti{
+    position: absolute;
+    padding: 0 6px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    right: -1px;
+    top: -6px;
+}
+.noti.tamgiacvuong::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid red;
+    transform: rotate(45deg);
+    left: -1.3px;
+    bottom: -9px;
+  }
+.noti.green {
+    background-color: #26AE5E;
+}
+.noti.red {
+    background-color: #CA1F28;
+}
+.content-1 .title {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.content-1 .list-text {
+color: #D8D8D8;
+}
+.content-1 .list-num {
+    color: #ddd;
+}
